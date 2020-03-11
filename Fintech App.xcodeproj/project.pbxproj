@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,13 @@
 		DCEA0035241849420002A823 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCEA0033241849420002A823 /* LaunchScreen.storyboard */; };
 		DCEA0040241849430002A823 /* Fintech_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEA003F241849430002A823 /* Fintech_AppTests.swift */; };
 		DCEA004B241849430002A823 /* Fintech_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEA004A241849430002A823 /* Fintech_AppUITests.swift */; };
+		DCEA005C241861D20002A823 /* const.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEA005B241861D20002A823 /* const.swift */; };
+		DCEA00602418627C0002A823 /* company.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEA005F2418627C0002A823 /* company.swift */; };
+		DCEA00622418627F0002A823 /* companyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEA00612418627F0002A823 /* companyList.swift */; };
+		DCEA0065241864B30002A823 /* URLImage in Frameworks */ = {isa = PBXBuildFile; productRef = DCEA0064241864B30002A823 /* URLImage */; };
+		DCEA00672418655D0002A823 /* companyListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEA00662418655D0002A823 /* companyListItem.swift */; };
+		DCEA006A241876FD0002A823 /* roundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEA0069241876FD0002A823 /* roundedCorner.swift */; };
+		DCEA006E2418831E0002A823 /* hostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEA006D2418831E0002A823 /* hostingController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +56,12 @@
 		DCEA0046241849430002A823 /* Fintech AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Fintech AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCEA004A241849430002A823 /* Fintech_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fintech_AppUITests.swift; sourceTree = "<group>"; };
 		DCEA004C241849430002A823 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCEA005B241861D20002A823 /* const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = const.swift; sourceTree = "<group>"; };
+		DCEA005F2418627C0002A823 /* company.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = company.swift; sourceTree = "<group>"; };
+		DCEA00612418627F0002A823 /* companyList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = companyList.swift; sourceTree = "<group>"; };
+		DCEA00662418655D0002A823 /* companyListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = companyListItem.swift; sourceTree = "<group>"; };
+		DCEA0069241876FD0002A823 /* roundedCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = roundedCorner.swift; sourceTree = "<group>"; };
+		DCEA006D2418831E0002A823 /* hostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hostingController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCEA0065241864B30002A823 /* URLImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +113,10 @@
 		DCEA0027241849400002A823 /* Fintech App */ = {
 			isa = PBXGroup;
 			children = (
+				DCEA0068241876DB0002A823 /* utils */,
+				DCEA005E2418626D0002A823 /* models */,
+				DCEA005D2418625C0002A823 /* listItems */,
+				DCEA005A241861C70002A823 /* const */,
 				DCEA0028241849400002A823 /* AppDelegate.swift */,
 				DCEA002A241849400002A823 /* SceneDelegate.swift */,
 				DCEA002C241849400002A823 /* ContentView.swift */,
@@ -136,6 +154,40 @@
 			path = "Fintech AppUITests";
 			sourceTree = "<group>";
 		};
+		DCEA005A241861C70002A823 /* const */ = {
+			isa = PBXGroup;
+			children = (
+				DCEA005B241861D20002A823 /* const.swift */,
+			);
+			path = const;
+			sourceTree = "<group>";
+		};
+		DCEA005D2418625C0002A823 /* listItems */ = {
+			isa = PBXGroup;
+			children = (
+				DCEA00662418655D0002A823 /* companyListItem.swift */,
+			);
+			path = listItems;
+			sourceTree = "<group>";
+		};
+		DCEA005E2418626D0002A823 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				DCEA00612418627F0002A823 /* companyList.swift */,
+				DCEA005F2418627C0002A823 /* company.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		DCEA0068241876DB0002A823 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				DCEA0069241876FD0002A823 /* roundedCorner.swift */,
+				DCEA006D2418831E0002A823 /* hostingController.swift */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -152,6 +204,9 @@
 			dependencies = (
 			);
 			name = "Fintech App";
+			packageProductDependencies = (
+				DCEA0064241864B30002A823 /* URLImage */,
+			);
 			productName = "Fintech App";
 			productReference = DCEA0025241849400002A823 /* Fintech App.app */;
 			productType = "com.apple.product-type.application";
@@ -224,6 +279,9 @@
 				Base,
 			);
 			mainGroup = DCEA001C241849400002A823;
+			packageReferences = (
+				DCEA0063241864B30002A823 /* XCRemoteSwiftPackageReference "url-image" */,
+			);
 			productRefGroup = DCEA0026241849400002A823 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -267,9 +325,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCEA006A241876FD0002A823 /* roundedCorner.swift in Sources */,
+				DCEA006E2418831E0002A823 /* hostingController.swift in Sources */,
 				DCEA0029241849400002A823 /* AppDelegate.swift in Sources */,
+				DCEA005C241861D20002A823 /* const.swift in Sources */,
 				DCEA002B241849400002A823 /* SceneDelegate.swift in Sources */,
 				DCEA002D241849400002A823 /* ContentView.swift in Sources */,
+				DCEA00602418627C0002A823 /* company.swift in Sources */,
+				DCEA00622418627F0002A823 /* companyList.swift in Sources */,
+				DCEA00672418655D0002A823 /* companyListItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -594,6 +658,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DCEA0063241864B30002A823 /* XCRemoteSwiftPackageReference "url-image" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dmytro-anokhin/url-image";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.10;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DCEA0064241864B30002A823 /* URLImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DCEA0063241864B30002A823 /* XCRemoteSwiftPackageReference "url-image" */;
+			productName = URLImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DCEA001D241849400002A823 /* Project object */;
 }
